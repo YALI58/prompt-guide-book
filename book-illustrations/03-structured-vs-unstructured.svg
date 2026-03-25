@@ -1,0 +1,117 @@
+<svg width="900" height="620" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+   <path d="m0,0l10,5l-10,5l0,-10z" fill="#ef4444" id="svg_1"/>
+  </marker>
+  <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+   <path d="m0,0l10,5l-10,5l0,-10z" fill="#10b981" id="svg_2"/>
+  </marker>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+   <path d="m0,0l10,5l-10,5l0,-10z" fill="#94a3b8" id="svg_3"/>
+  </marker>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+   <stop offset="0%" stop-color="#0f172a"/>
+   <stop offset="100%" stop-color="#1e293b"/>
+  </linearGradient>
+ </defs>
+ <!-- ═══════ LEFT: Unstructured ═══════ -->
+ <!-- Input box -->
+ <!-- Model confusion -->
+ <!-- Attention scatter visualization -->
+ <!-- Scatter dots - random, unfocused -->
+ <!-- Problems list -->
+ <!-- Output -->
+ <!-- ═══════ CENTER: Arrow ═══════ -->
+ <!-- ═══════ RIGHT: Structured ═══════ -->
+ <!-- Structured input -->
+ <!-- Model focus -->
+ <!-- Attention focus visualization -->
+ <!-- Focus dots - clustered by section -->
+ <!-- Benefits -->
+ <!-- Output -->
+ <!-- Insert position note -->
+ <g>
+  <title>Layer 1</title>
+  <rect width="900" height="620" fill="url(#bg)" rx="12" id="svg_4" y="0" x="1"/>
+  <text x="450" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0" text-anchor="middle" id="svg_5">结构化 vs 非结构化 Prompt 的模型处理差异</text>
+  <rect x="30" y="60" width="410" height="540" rx="12" fill="#1a0a0a" stroke="#ef4444" stroke-width="2" id="svg_6"/>
+  <text x="235" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#fca5a5" text-anchor="middle" id="svg_7">❌ 非结构化 Prompt</text>
+  <rect x="45" y="100" width="380" height="95" rx="8" fill="#2d0a0a" stroke="#7f1d1d" id="svg_8"/>
+  <text x="60" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f87171" id="svg_9">输入：</text>
+  <text x="60" y="137" font-family="'Consolas', monospace" font-size="9" fill="#fca5a5" id="svg_10">帮我看看这段代码有什么问题，</text>
+  <text x="60" y="152" font-family="'Consolas', monospace" font-size="9" fill="#fca5a5" id="svg_11">性能不太好，顺便优化一下，</text>
+  <text x="60" y="167" font-family="'Consolas', monospace" font-size="9" fill="#fca5a5" id="svg_12">用中文回答，简单点说就行</text>
+  <text x="60" y="182" font-family="'Consolas', monospace" font-size="9" fill="#fca5a5" id="svg_13">[粘贴了一大段代码...]</text>
+  <line x1="235" y1="195" x2="235" y2="225" stroke="#ef4444" stroke-width="2" marker-end="url(#arrR)" id="svg_14"/>
+  <text x="250" y="215" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#f87171" id="svg_15">模糊输入</text>
+  <rect x="45" y="230" width="380" height="100" rx="8" fill="#1a0505" stroke="#450a0a" id="svg_16"/>
+  <text x="235" y="250" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#fca5a5" text-anchor="middle" id="svg_17">注意力分散示意</text>
+  <circle cx="80" cy="275" r="4" fill="#ef4444" opacity="0.8" id="svg_18"/>
+  <circle cx="100" cy="290" r="3" fill="#ef4444" opacity="0.5" id="svg_19"/>
+  <circle cx="130" cy="280" r="5" fill="#ef4444" opacity="0.6" id="svg_20"/>
+  <circle cx="155" cy="295" r="3" fill="#ef4444" opacity="0.4" id="svg_21"/>
+  <circle cx="175" cy="270" r="4" fill="#ef4444" opacity="0.7" id="svg_22"/>
+  <circle cx="200" cy="300" r="3" fill="#ef4444" opacity="0.5" id="svg_23"/>
+  <circle cx="220" cy="278" r="5" fill="#ef4444" opacity="0.6" id="svg_24"/>
+  <circle cx="250" cy="288" r="4" fill="#ef4444" opacity="0.8" id="svg_25"/>
+  <circle cx="275" cy="272" r="3" fill="#ef4444" opacity="0.4" id="svg_26"/>
+  <circle cx="295" cy="295" r="5" fill="#ef4444" opacity="0.5" id="svg_27"/>
+  <circle cx="320" cy="280" r="4" fill="#ef4444" opacity="0.7" id="svg_28"/>
+  <circle cx="345" cy="268" r="3" fill="#ef4444" opacity="0.6" id="svg_29"/>
+  <circle cx="365" cy="290" r="4" fill="#ef4444" opacity="0.5" id="svg_30"/>
+  <circle cx="385" cy="275" r="3" fill="#ef4444" opacity="0.4" id="svg_31"/>
+  <circle cx="400" cy="305" r="4" fill="#ef4444" opacity="0.6" id="svg_32"/>
+  <text x="235" y="325" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#991b1b" text-anchor="middle" id="svg_33">指令、代码、格式要求混在一起 → 模型难以聚焦</text>
+  <rect x="45" y="345" width="380" height="130" rx="8" fill="#1a0505" stroke="#450a0a" id="svg_34"/>
+  <text x="60" y="365" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#fca5a5" id="svg_35">⚠️ 常见问题</text>
+  <text x="60" y="385" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fca5a5" id="svg_36">1. 任务边界模糊 → 模型不确定该做什么</text>
+  <text x="60" y="403" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fca5a5" id="svg_37">2. 约束隐藏在指令中 → 容易被忽略</text>
+  <text x="60" y="421" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fca5a5" id="svg_38">3. 输出格式未指定 → 结果不可控</text>
+  <text x="60" y="439" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fca5a5" id="svg_39">4. 角色缺失 → 模型使用默认泛化模式</text>
+  <text x="60" y="457" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fca5a5" id="svg_40">5. 示例无 → 依赖 Zero-Shot 推理</text>
+  <rect x="45" y="490" width="380" height="65" rx="8" fill="#2d0a0a" stroke="#7f1d1d" id="svg_41"/>
+  <text x="60" y="510" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f87171" id="svg_42">输出（不稳定）：</text>
+  <text x="60" y="528" font-family="'Consolas', monospace" font-size="9" fill="#fca5a5" id="svg_43">"这段代码可以用for循环改写，</text>
+  <text x="60" y="543" font-family="'Consolas', monospace" font-size="9" fill="#fca5a5" id="svg_44">另外变量命名可以更清楚一些..."</text>
+  <line x1="450" y1="300" x2="465" y2="300" stroke="#94a3b8" stroke-width="3" marker-end="url(#arr)" id="svg_45"/>
+  <rect x="470" y="60" width="410" height="540" rx="12" fill="#0a1a0a" stroke="#10b981" stroke-width="2" id="svg_46"/>
+  <text x="690" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#6ee7b7" text-anchor="middle" id="svg_47">✅ 结构化 Prompt</text>
+  <rect x="485" y="100" width="380" height="120" rx="8" fill="#052e16" stroke="#166534" id="svg_48"/>
+  <text x="500" y="118" font-family="'Consolas', monospace" font-size="9" fill="#4ade80" id="svg_49"># 角色</text>
+  <text x="500" y="133" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_50">你是一位 Python 性能优化专家。</text>
+  <text x="500" y="153" font-family="'Consolas', monospace" font-size="9" fill="#4ade80" id="svg_51"># 任务</text>
+  <text x="500" y="168" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_52">审查以下代码，识别性能瓶颈。</text>
+  <text x="500" y="188" font-family="'Consolas', monospace" font-size="9" fill="#4ade80" id="svg_53"># 输出格式</text>
+  <text x="500" y="203" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_54">按严重程度分级：🔴严重 🟡中等 🟢轻微</text>
+  <text x="500" y="218" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_55">每条附代码位置和优化方案。</text>
+  <line x1="690" y1="220" x2="690" y2="245" stroke="#10b981" stroke-width="2" marker-end="url(#arrG)" id="svg_56"/>
+  <text x="705" y="237" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#4ade80" id="svg_57">清晰输入</text>
+  <rect x="485" y="250" width="380" height="100" rx="8" fill="#022c22" stroke="#134e4a" id="svg_58"/>
+  <text x="675" y="270" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6ee7b7" text-anchor="middle" id="svg_59">注意力聚焦示意</text>
+  <text x="530" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#4ade80" id="svg_60">角色区</text>
+  <circle cx="510" cy="305" r="5" fill="#10b981" opacity="0.9" id="svg_61"/>
+  <circle cx="530" cy="300" r="4" fill="#10b981" opacity="0.8" id="svg_62"/>
+  <circle cx="545" cy="310" r="5" fill="#10b981" opacity="0.7" id="svg_63"/>
+  <text x="620" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#4ade80" id="svg_64">任务区</text>
+  <circle cx="595" cy="305" r="6" fill="#10b981" opacity="0.95" id="svg_65"/>
+  <circle cx="620" cy="298" r="5" fill="#10b981" opacity="0.9" id="svg_66"/>
+  <circle cx="640" cy="308" r="6" fill="#10b981" opacity="0.85" id="svg_67"/>
+  <text x="760" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#4ade80" id="svg_68">格式区</text>
+  <circle cx="730" cy="305" r="5" fill="#10b981" opacity="0.9" id="svg_69"/>
+  <circle cx="755" cy="300" r="4" fill="#10b981" opacity="0.85" id="svg_70"/>
+  <circle cx="775" cy="310" r="5" fill="#10b981" opacity="0.8" id="svg_71"/>
+  <text x="675" y="340" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#115e59" text-anchor="middle" id="svg_72">各区域内部注意力集中，跨区干扰小 → 任务执行更精准</text>
+  <rect x="485" y="365" width="380" height="115" rx="8" fill="#022c22" stroke="#134e4a" id="svg_73"/>
+  <text x="500" y="385" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#6ee7b7" id="svg_74">✨ 优势</text>
+  <text x="500" y="405" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6ee7b7" id="svg_75">1. 角色定义 → 激活专业模式，减少泛化</text>
+  <text x="500" y="423" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6ee7b7" id="svg_76">2. 分区标注 → 注意力自然聚焦于对应区域</text>
+  <text x="500" y="441" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6ee7b7" id="svg_77">3. 输出格式明确 → 结果可预测、可解析</text>
+  <text x="500" y="459" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6ee7b7" id="svg_78">4. 约束独立 → 不会被指令语句淹没</text>
+  <rect x="485" y="495" width="380" height="85" rx="8" fill="#052e16" stroke="#166534" id="svg_79"/>
+  <text x="500" y="513" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#4ade80" id="svg_80">输出（稳定、结构化）：</text>
+  <text x="500" y="530" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_81">🔴 严重：第12行嵌套循环 O(n²)</text>
+  <text x="500" y="545" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_82">→ 用字典预处理降至 O(n)</text>
+  <text x="500" y="560" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_83">🟡 中等：第8行重复创建临时对象</text>
+  <text x="500" y="575" font-family="'Consolas', monospace" font-size="9" fill="#86efac" id="svg_84">→ 提取到循环外复用</text>
+ </g>
+</svg>

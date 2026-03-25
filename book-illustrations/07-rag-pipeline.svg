@@ -1,0 +1,109 @@
+<svg width="900" height="520" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker orient="auto" markerHeight="6" markerWidth="6" refY="5" refX="9" viewBox="0 0 10 10" id="arr">
+   <path id="svg_1" fill="#94a3b8" d="m0,0l10,5l-10,5l0,-10z"/>
+  </marker>
+  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="bg">
+   <stop stop-color="#0f172a" offset="0%"/>
+   <stop stop-color="#1e293b" offset="100%"/>
+  </linearGradient>
+ </defs>
+ <!-- ═══════ Offline: Indexing Phase ═══════ -->
+ <!-- ═══════ Online: Query Phase ═══════ -->
+ <!-- User Query -->
+ <!-- Arrow to retrieval -->
+ <!-- Query Embedding -->
+ <!-- Arrow to vector DB -->
+ <!-- Vector search -->
+ <!-- Arrow to retrieved docs -->
+ <!-- Retrieved chunks -->
+ <!-- Arrow to prompt assembly -->
+ <!-- Prompt assembly - the key part -->
+ <!-- Arrow to LLM -->
+ <!-- LLM -->
+ <!-- Arrow to answer -->
+ <!-- Final answer -->
+ <!-- Key prompt strategies -->
+ <!-- Insert position -->
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="null" x="-4" y="-4.00001" id="svg_2" rx="12" fill="url(#bg)" height="538.00001" width="907.00003"/>
+  <text id="svg_3" text-anchor="middle" fill="#e2e8f0" font-weight="700" font-size="20" font-family="'Segoe UI', Arial, sans-serif" y="35" x="450">RAG（检索增强生成）架构中的 Prompt 策略</text>
+  <rect id="svg_4" stroke="#475569" fill="#0c1322" rx="10" height="115" width="840" y="55" x="30"/>
+  <text id="svg_5" text-anchor="middle" fill="#94a3b8" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="75" x="450">📤 离线阶段：文档索引（Indexing）</text>
+  <rect id="svg_6" stroke="#2563eb" fill="#1e3a5f" rx="8" height="65" width="120" y="85" x="50"/>
+  <text id="svg_7" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="105" x="110">📄 文档库</text>
+  <text id="svg_8" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="120" x="110">PDF / 网页 / 数据库</text>
+  <text id="svg_9" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="135" x="110">知识库 / 手册</text>
+  <line id="svg_10" marker-end="url(#arr)" stroke-width="1.5" stroke="#60a5fa" y2="118" x2="210" y1="118" x1="170"/>
+  <text id="svg_11" text-anchor="middle" fill="#64748b" font-size="8" font-family="'Segoe UI', Arial, sans-serif" y="110" x="190">分块</text>
+  <rect id="svg_12" stroke="#2563eb" fill="#1e3a5f" rx="8" height="65" width="120" y="85" x="215"/>
+  <text id="svg_13" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="105" x="275">✂️ 分块器</text>
+  <text id="svg_14" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="120" x="275">Chunk 512 tokens</text>
+  <text id="svg_15" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="135" x="275">滑动窗口重叠</text>
+  <line id="svg_16" marker-end="url(#arr)" stroke-width="1.5" stroke="#60a5fa" y2="118" x2="375" y1="118" x1="335"/>
+  <text id="svg_17" text-anchor="middle" fill="#64748b" font-size="8" font-family="'Segoe UI', Arial, sans-serif" y="110" x="355">编码</text>
+  <rect id="svg_18" stroke="#2563eb" fill="#1e3a5f" rx="8" height="65" width="120" y="85" x="380"/>
+  <text id="svg_19" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="105" x="440">🧮 Embedding</text>
+  <text id="svg_20" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="120" x="440">文本 → 向量</text>
+  <text id="svg_21" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="135" x="440">768d / 1536d</text>
+  <line id="svg_22" marker-end="url(#arr)" stroke-width="1.5" stroke="#60a5fa" y2="118" x2="540" y1="118" x1="500"/>
+  <text id="svg_23" text-anchor="middle" fill="#64748b" font-size="8" font-family="'Segoe UI', Arial, sans-serif" y="110" x="520">存储</text>
+  <rect id="svg_24" stroke="#2563eb" fill="#1e3a5f" rx="8" height="65" width="140" y="85" x="545"/>
+  <text id="svg_25" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="105" x="615">🗃️ 向量数据库</text>
+  <text id="svg_26" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="120" x="615">FAISS / Pinecone</text>
+  <text id="svg_27" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="135" x="615">Milvus / Weaviate</text>
+  <rect stroke="#475569" id="svg_28" fill="#0c1322" rx="10" height="330.99998" width="840" y="188.00001" x="21"/>
+  <text id="svg_29" text-anchor="middle" fill="#e2e8f0" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="205" x="450">📥 在线阶段：检索 + 生成（Retrieval + Generation）</text>
+  <rect id="svg_30" stroke-width="1.5" stroke="#7c3aed" fill="#2e1065" rx="8" height="55" width="140" y="220" x="50"/>
+  <text id="svg_31" text-anchor="middle" fill="#c4b5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="240" x="120">👤 用户提问</text>
+  <text id="svg_32" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="258" x="120">"公司的退货政策</text>
+  <text id="svg_33" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="270" x="120">是什么？"</text>
+  <line id="svg_34" marker-end="url(#arr)" stroke-width="1.5" stroke="#a78bfa" y2="248" x2="230" y1="248" x1="190"/>
+  <rect id="svg_35" stroke="#2563eb" fill="#1e3a5f" rx="8" height="55" width="110" y="220" x="235"/>
+  <text id="svg_36" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="240" x="290">🧮 Query→向量</text>
+  <text id="svg_37" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="258" x="290">同样 Embedding</text>
+  <line id="svg_38" marker-end="url(#arr)" stroke-width="1.5" stroke="#60a5fa" y2="248" x2="390" y1="248" x1="345"/>
+  <rect id="svg_39" stroke-width="1.5" stroke="#2563eb" fill="#1e3a5f" rx="8" height="65" width="130" y="215" x="395"/>
+  <text id="svg_40" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="235" x="460">🔍 向量检索</text>
+  <text id="svg_41" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="253" x="460">余弦相似度</text>
+  <text id="svg_42" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="268" x="460">Top-K = 3</text>
+  <line id="svg_43" marker-end="url(#arr)" stroke-width="1.5" stroke="#60a5fa" y2="248" x2="555" y1="248" x1="525"/>
+  <rect id="svg_44" stroke-width="1.5" stroke="#166534" fill="#052e16" rx="8" height="85" width="170" y="215" x="560"/>
+  <text id="svg_45" text-anchor="middle" fill="#6ee7b7" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="233" x="645">📋 检索到的文档片段</text>
+  <text id="svg_46" fill="#86efac" font-size="8" font-family="'Consolas', monospace" y="250" x="575">[文档1] 退货须在购买后30天内</text>
+  <text id="svg_47" fill="#86efac" font-size="8" font-family="'Consolas', monospace" y="263" x="575">[文档2] 商品需保持原包装完好</text>
+  <text id="svg_48" fill="#86efac" font-size="8" font-family="'Consolas', monospace" y="276" x="575">[文档3] 数码产品需附带发票</text>
+  <text id="svg_49" fill="#64748b" font-size="8" font-family="'Consolas', monospace" y="293" x="575">相似度：0.94 / 0.87 / 0.82</text>
+  <line id="svg_50" marker-end="url(#arr)" stroke-width="1.5" stroke="#10b981" y2="330" x2="645" y1="300" x1="645"/>
+  <line id="svg_51" stroke-dasharray="4,3" stroke-width="1.5" stroke="#a78bfa" y2="340" x2="120" y1="275" x1="120"/>
+  <line id="svg_52" marker-end="url(#arr)" stroke-width="1.5" stroke="#a78bfa" y2="340" x2="370" y1="340" x1="120"/>
+  <rect id="svg_53" stroke-width="2" stroke="#3b82f6" fill="#172554" rx="10" height="95" width="340" y="320" x="375"/>
+  <text id="svg_54" text-anchor="middle" fill="#93c5fd" font-weight="700" font-size="11" font-family="'Segoe UI', Arial, sans-serif" y="340" x="545">🔧 RAG Prompt 组装（关键环节）</text>
+  <rect id="svg_55" stroke="#334155" fill="#0f172a" rx="5" height="58" width="310" y="348" x="390"/>
+  <text id="svg_56" fill="#6ee7b7" font-size="8" font-family="'Consolas', monospace" y="363" x="405">请基于以下文档回答问题。如无相关信息请说明。</text>
+  <text id="svg_57" fill="#94a3b8" font-size="8" font-family="'Consolas', monospace" y="376" x="405">## 文档片段：[文档1]... [文档2]... [文档3]...</text>
+  <text id="svg_58" fill="#fbbf24" font-size="8" font-family="'Consolas', monospace" y="389" x="405">## 用户问题：公司的退货政策是什么？</text>
+  <text id="svg_59" fill="#94a3b8" font-size="8" font-family="'Consolas', monospace" y="402" x="405">## 回答规则：引用来源编号，不使用外部知识</text>
+  <line id="svg_60" marker-end="url(#arr)" stroke-width="1.5" stroke="#3b82f6" y2="370" x2="750" y1="370" x1="715"/>
+  <rect id="svg_61" stroke-width="2" stroke="#7c3aed" fill="#2e1065" rx="10" height="60" width="100" y="340" x="755"/>
+  <text id="svg_62" text-anchor="middle" fill="#c4b5fd" font-weight="700" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="365" x="805">🤖 LLM</text>
+  <text id="svg_63" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="385" x="805">生成回答</text>
+  <line id="svg_64" marker-end="url(#arr)" stroke-width="1.5" stroke="#7c3aed" y2="425" x2="805" y1="400" x1="805"/>
+  <path id="svg_65" d="m646,450c0,-5.43379 4.56621,-10 10,-10l190,0c5.43379,0 10,4.56621 10,10l0,40c0,5.43379 -4.56621,10 -10,10l-190,0c-5.43379,0 -10,-4.56621 -10,-10l0,-40z" opacity="undefined" stroke-width="2" stroke="#10b981" fill="#052e16"/>
+  <text id="svg_66" text-anchor="middle" fill="#6ee7b7" font-weight="600" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="450" x="805">✅ 生成回答</text>
+  <text id="svg_67" fill="#86efac" font-size="8" font-family="'Consolas', monospace" y="463" x="713">"根据公司政策，退货须在购买</text>
+  <text id="svg_68" fill="#86efac" font-size="8" font-family="'Consolas', monospace" y="478" x="715">后30天内，商品保持原包装...</text>
+  <text id="svg_69" fill="#64748b" font-size="8" font-family="'Consolas', monospace" y="491" x="715">[来源：文档1, 文档2]"</text>
+  <path stroke="#fbbf24" id="svg_70" d="m23,355.33333c0,-5.07154 3.82859,-9.33333 8.38462,-9.33333l201.23076,0c4.55602,0 8.38462,4.2618 8.38462,9.33333l0,149.33333c0,5.07154 -3.82859,9.33333 -8.38462,9.33333l-201.23076,0c-4.55602,0 -8.38462,-4.2618 -8.38462,-9.33333l0,-149.33333z" opacity="undefined" fill="#1a1a2e"/>
+  <text transform="matrix(0.676161 0 0 1.98933 75.3203 -432.31)" stroke="null" id="svg_71" text-anchor="middle" fill="#fbbf24" font-weight="600" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="384.6514" x="-10.05575">💡 RAG Prompt 策略要点</text>
+  <text id="svg_72" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="365" x="55">① 明确限制：只用提供的文档</text>
+  <text id="svg_73" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="385" x="55">② 允许拒答：文档不足时说明</text>
+  <text id="svg_74" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="405" x="55">③ 引用来源：标注文档编号</text>
+  <text id="svg_75" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="425" x="55">④ 排序相关性：最相关放首位</text>
+  <text id="svg_76" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="445" x="55">⑤ 分隔清晰：文档与问题分离</text>
+  <text id="svg_77" fill="#f87171" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="470" x="55">⚠ 检索质量决定回答上限</text>
+  <text id="svg_78" fill="#f87171" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="488" x="55">再好的 Prompt 也救不了</text>
+  <text id="svg_79" fill="#f87171" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="500" x="55">错误的检索结果</text>
+ </g>
+</svg>

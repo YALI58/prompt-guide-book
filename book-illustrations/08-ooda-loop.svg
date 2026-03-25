@@ -1,0 +1,69 @@
+<svg width="900" height="550" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+   <path d="m0,0l10,5l-10,5l0,-10z" fill="#94a3b8" id="svg_1"/>
+  </marker>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+   <stop offset="0%" stop-color="#0f172a"/>
+   <stop offset="100%" stop-color="#1e293b"/>
+  </linearGradient>
+ </defs>
+ <!-- OODA Cycle - Circular layout -->
+ <!-- Left panel: Test data -->
+ <!-- Right panel: Metrics tracking -->
+ <!-- Bottom: Principles -->
+ <!-- Insert position -->
+ <g>
+  <title>Layer 1</title>
+  <path fill="url(#bg)" opacity="undefined" d="m-1,11c0,-6.52055 5.47945,-12 12,-12l876,0c6.52055,0 12,5.47945 12,12l0,526c0,6.52055 -5.47945,12 -12,12l-876,0c-6.52055,0 -12,-5.47945 -12,-12l0,-526z" id="svg_86"/>
+  <text x="450" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0" text-anchor="middle" id="svg_3">Prompt 迭代优化：OODA 循环</text>
+  <text x="450" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" id="svg_4">Observe → Orient → Decide → Act — 持续迭代直到达到目标</text>
+  <g id="svg_5">
+   <!-- Cycle circle background -->
+   <circle cx="389" cy="266" r="170" fill="none" stroke="#334155" stroke-dasharray="6,4" id="svg_6"/>
+   <!-- O: Observe (top) -->
+   <rect x="289" y="81" width="200" height="90" rx="12" fill="#172554" stroke="#3b82f6" stroke-width="2" id="svg_7"/>
+   <text x="389" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#93c5fd" text-anchor="middle" id="svg_8">👁️ Observe</text>
+   <text x="389" y="126" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#bfdbfe" text-anchor="middle" id="svg_9">收集 Prompt 输出样本</text>
+   <text x="389" y="141" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_10">哪些符合预期？哪些偏离？</text>
+   <text x="389" y="156" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_11">失败输出有什么共同特征？</text>
+   <!-- Arrow O→ -->
+   <line x1="484" y1="126" x2="529" y2="196" stroke="#60a5fa" stroke-width="2" marker-end="url(#arr)" id="svg_12"/>
+   <!-- O: Orient (right) -->
+   <rect x="519" y="186" width="200" height="90" rx="12" fill="#2e1065" stroke="#7c3aed" stroke-width="2" id="svg_13"/>
+   <text x="619" y="213" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#c4b5fd" text-anchor="middle" id="svg_14">🧭 Orient</text>
+   <text x="619" y="231" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#ddd6fe" text-anchor="middle" id="svg_15">分析失败原因</text>
+   <text x="619" y="246" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_16">指令不清晰？格式缺失？</text>
+   <text x="619" y="261" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_17">约束不够？还是模型能力问题？</text>
+   <!-- Arrow → -->
+   <line x1="619" y1="276" x2="619" y2="331" stroke="#a78bfa" stroke-width="2" marker-end="url(#arr)" id="svg_18"/>
+   <!-- D: Decide (bottom-right → bottom) -->
+   <rect x="489" y="356" width="200" height="90" rx="12" fill="#052e16" stroke="#10b981" stroke-width="2" id="svg_19"/>
+   <text x="589" y="383" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#6ee7b7" text-anchor="middle" id="svg_20">🎯 Decide</text>
+   <text x="589" y="401" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#a7f3d0" text-anchor="middle" id="svg_21">确定修改方向</text>
+   <text x="589" y="416" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_22">增删哪个组件？</text>
+   <text x="589" y="431" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_23">一次只改一个变量！</text>
+   <!-- Arrow → -->
+   <line x1="489" y1="401" x2="409" y2="336" stroke="#34d399" stroke-width="2" marker-end="url(#arr)" id="svg_24"/>
+   <!-- A: Act (bottom-left → left) -->
+   <rect x="159" y="286" width="200" height="90" rx="12" fill="#422006" stroke="#f59e0b" stroke-width="2" id="svg_25"/>
+   <text x="259" y="313" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#fcd34d" text-anchor="middle" id="svg_26">⚡ Act</text>
+   <text x="259" y="331" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fef3c7" text-anchor="middle" id="svg_27">实施修改，重新测试</text>
+   <text x="259" y="346" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_28">用相同测试集验证</text>
+   <text x="259" y="361" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle" id="svg_29">记录修改前后对比</text>
+   <!-- Arrow → back to Observe -->
+   <line x1="259" y1="286" x2="309" y2="171" stroke="#fbbf24" stroke-width="2" marker-end="url(#arr)" id="svg_30"/>
+   <!-- Center label -->
+   <circle cx="389" cy="266" r="45" fill="#0f172a" stroke="#475569" stroke-width="1.5" id="svg_31"/>
+   <text x="389" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" text-anchor="middle" id="svg_32">OODA</text>
+   <text x="389" y="274" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle" id="svg_33">循环</text>
+   <text x="389" y="288" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle" id="svg_34">每轮提升</text>
+   <!-- Curved arrows showing cycle -->
+   <path d="m474,166q35,-30 45,20" fill="none" stroke="#64748b" stroke-dasharray="3,3" id="svg_35"/>
+   <path d="m619,276q20,40 0,55" fill="none" stroke="#64748b" stroke-dasharray="3,3" id="svg_36"/>
+   <path d="m489,401q-40,5 -80,-25" fill="none" stroke="#64748b" stroke-dasharray="3,3" id="svg_37"/>
+   <path d="m259,286q-20,-50 10,-100" fill="none" stroke="#64748b" stroke-dasharray="3,3" id="svg_38"/>
+  </g>
+  <ellipse fill="url(#bg)" cx="776.66664" cy="169.66666" id="svg_88" stroke="null"/>
+ </g>
+</svg>

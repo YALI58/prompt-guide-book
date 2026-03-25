@@ -1,0 +1,160 @@
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="shadow"/>
+  <marker orient="auto" markerHeight="6" markerWidth="6" refY="5" refX="9" viewBox="0 0 10 10" id="arrow">
+   <path id="svg_1" fill="#94a3b8" d="m0,0l10,5l-10,5l0,-10z"/>
+  </marker>
+  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="bg1">
+   <stop stop-color="#0f172a" offset="0%"/>
+   <stop stop-color="#1e293b" offset="100%"/>
+  </linearGradient>
+  <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="tokGrad">
+   <stop stop-color="#10b981" offset="0%"/>
+   <stop stop-color="#059669" offset="100%"/>
+  </linearGradient>
+ </defs>
+ <!-- Background -->
+ <!-- Title -->
+ <!-- ═══════ STAGE 1: User Input ═══════ -->
+ <!-- Arrow 1→2 -->
+ <!-- ═══════ STAGE 2: Tokenization ═══════ -->
+ <!-- Token boxes -->
+ <!-- Arrow 2→3 -->
+ <!-- ═══════ STAGE 3: Embedding + Position ═══════ -->
+ <!-- Vector visualization -->
+ <!-- Arrow 3→4 -->
+ <!-- ═══════ STAGE 4: Transformer Blocks ═══════ -->
+ <!-- Layer 1 -->
+ <!-- dots -->
+ <!-- Layer N -->
+ <!-- Arrow 4→5 -->
+ <!-- ═══════ STAGE 5: Output Head ═══════ -->
+ <!-- Probability bars -->
+ <!-- Arrow 5→6 -->
+ <!-- ═══════ STAGE 6: Generated Output ═══════ -->
+ <!-- ═══════ Side annotation: Key insight ═══════ -->
+ <!-- Stage labels -->
+ <g>
+  <title>Layer 1</title>
+  <rect x="3" y="3" id="svg_3" rx="12" fill="url(#bg1)" height="600" width="900"/>
+  <text id="svg_4" text-anchor="middle" fill="#e2e8f0" font-weight="700" font-size="20" font-family="'Segoe UI', Arial, sans-serif" y="38" x="450">Prompt 进入 LLM 的处理流程</text>
+  <rect id="svg_5" filter="url(#shadow)" stroke-width="2" stroke="#3b82f6" fill="#1e3a5f" rx="12" height="100" width="160" y="70" x="40"/>
+  <text id="svg_6" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="95" x="120">📝 用户输入</text>
+  <text id="svg_7" text-anchor="middle" fill="#bfdbfe" font-size="11" font-family="'Consolas', monospace" y="118" x="120">"分析这段代码</text>
+  <text id="svg_8" text-anchor="middle" fill="#bfdbfe" font-size="11" font-family="'Consolas', monospace" y="133" x="120">的性能问题"</text>
+  <text id="svg_9" text-anchor="middle" fill="#64748b" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="158" x="120">自然语言文本</text>
+  <line id="svg_10" marker-end="url(#arrow)" stroke-width="2" stroke="#94a3b8" y2="120" x2="250" y1="120" x1="200"/>
+  <text id="svg_11" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="110" x="225">编码</text>
+  <rect id="svg_12" filter="url(#shadow)" stroke-width="2" stroke="#10b981" fill="#0f2e1e" rx="12" height="120" width="180" y="60" x="255"/>
+  <text id="svg_13" text-anchor="middle" fill="#6ee7b7" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="85" x="345">🔤 Tokenization</text>
+  <rect id="svg_14" opacity="0.9" fill="url(#tokGrad)" rx="4" height="24" width="50" y="97" x="270"/>
+  <text id="svg_15" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="113" x="295">分析</text>
+  <rect id="svg_16" opacity="0.7" fill="url(#tokGrad)" rx="4" height="24" width="30" y="97" x="325"/>
+  <text id="svg_17" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="113" x="340">这</text>
+  <rect id="svg_18" opacity="0.9" fill="url(#tokGrad)" rx="4" height="24" width="30" y="97" x="360"/>
+  <text id="svg_19" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="113" x="375">段</text>
+  <rect id="svg_20" opacity="0.7" fill="url(#tokGrad)" rx="4" height="24" width="30" y="97" x="395"/>
+  <text id="svg_21" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="113" x="410">代</text>
+  <rect id="svg_22" opacity="0.9" fill="url(#tokGrad)" rx="4" height="24" width="30" y="128" x="270"/>
+  <text id="svg_23" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="144" x="285">码</text>
+  <rect id="svg_24" opacity="0.7" fill="url(#tokGrad)" rx="4" height="24" width="30" y="128" x="305"/>
+  <text id="svg_25" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="144" x="320">的</text>
+  <rect id="svg_26" opacity="0.9" fill="url(#tokGrad)" rx="4" height="24" width="40" y="128" x="340"/>
+  <text id="svg_27" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="144" x="360">性能</text>
+  <rect id="svg_28" opacity="0.7" fill="url(#tokGrad)" rx="4" height="24" width="30" y="128" x="385"/>
+  <text id="svg_29" text-anchor="middle" fill="#fff" font-size="10" font-family="'Consolas', monospace" y="144" x="400">问题</text>
+  <text id="svg_30" text-anchor="middle" fill="#64748b" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="170" x="345">BPE / SentencePiece → Token ID</text>
+  <line id="svg_31" marker-end="url(#arrow)" stroke-width="2" stroke="#94a3b8" y2="120" x2="485" y1="120" x1="435"/>
+  <text id="svg_32" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="110" x="460">向量化</text>
+  <rect id="svg_33" filter="url(#shadow)" stroke-width="2" stroke="#f59e0b" fill="#2e1f0f" rx="12" height="120" width="180" y="60" x="490"/>
+  <text id="svg_34" text-anchor="middle" fill="#fcd34d" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="85" x="580">🧮 Embedding</text>
+  <rect id="svg_35" fill="#422006" rx="3" height="12" width="150" y="97" x="505"/>
+  <rect id="svg_36" opacity="0.9" fill="#fbbf24" rx="2" height="12" width="15" y="97" x="505"/>
+  <rect id="svg_37" opacity="0.5" fill="#fbbf24" rx="1" height="12" width="8" y="97" x="522"/>
+  <rect id="svg_38" opacity="0.8" fill="#fbbf24" rx="2" height="12" width="22" y="97" x="532"/>
+  <rect id="svg_39" opacity="0.3" fill="#fbbf24" rx="1" height="12" width="5" y="97" x="556"/>
+  <rect id="svg_40" opacity="0.7" fill="#fbbf24" rx="2" height="12" width="12" y="97" x="563"/>
+  <rect id="svg_41" opacity="0.9" fill="#fbbf24" rx="2" height="12" width="30" y="97" x="577"/>
+  <rect id="svg_42" opacity="0.4" fill="#fbbf24" rx="1" height="12" width="8" y="97" x="609"/>
+  <rect id="svg_43" opacity="0.6" fill="#fbbf24" rx="2" height="12" width="18" y="97" x="619"/>
+  <rect id="svg_44" opacity="0.3" fill="#fbbf24" rx="1" height="12" width="8" y="97" x="639"/>
+  <rect id="svg_45" fill="#422006" rx="3" height="12" width="150" y="115" x="505"/>
+  <rect id="svg_46" opacity="0.6" fill="#fbbf24" rx="2" height="12" width="25" y="115" x="505"/>
+  <rect id="svg_47" opacity="0.3" fill="#fbbf24" rx="1" height="12" width="10" y="115" x="532"/>
+  <rect id="svg_48" opacity="0.8" fill="#fbbf24" rx="2" height="12" width="18" y="115" x="544"/>
+  <rect id="svg_49" opacity="0.9" fill="#fbbf24" rx="2" height="12" width="35" y="115" x="564"/>
+  <rect id="svg_50" opacity="0.4" fill="#fbbf24" rx="1" height="12" width="6" y="115" x="601"/>
+  <rect id="svg_51" opacity="0.5" fill="#fbbf24" rx="2" height="12" width="14" y="115" x="609"/>
+  <rect id="svg_52" opacity="0.7" fill="#fbbf24" rx="2" height="12" width="22" y="115" x="625"/>
+  <rect id="svg_53" fill="#422006" rx="3" height="12" width="150" y="133" x="505"/>
+  <rect id="svg_54" opacity="0.4" fill="#fbbf24" rx="1" height="12" width="8" y="133" x="505"/>
+  <rect id="svg_55" opacity="0.7" fill="#fbbf24" rx="2" height="12" width="20" y="133" x="515"/>
+  <rect id="svg_56" opacity="0.9" fill="#fbbf24" rx="2" height="12" width="12" y="133" x="537"/>
+  <rect id="svg_57" opacity="0.5" fill="#fbbf24" rx="2" height="12" width="28" y="133" x="551"/>
+  <rect id="svg_58" opacity="0.8" fill="#fbbf24" rx="2" height="12" width="15" y="133" x="581"/>
+  <rect id="svg_59" opacity="0.3" fill="#fbbf24" rx="1" height="12" width="6" y="133" x="598"/>
+  <rect id="svg_60" opacity="0.6" fill="#fbbf24" rx="2" height="12" width="30" y="133" x="606"/>
+  <rect id="svg_61" opacity="0.4" fill="#fbbf24" rx="1" height="12" width="8" y="133" x="638"/>
+  <text id="svg_62" text-anchor="middle" fill="#92400e" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="160" x="580">Token Embedding + Positional Encoding</text>
+  <text id="svg_63" text-anchor="middle" fill="#92400e" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="172" x="580">每个 Token → d 维向量 (如 4096d)</text>
+  <line id="svg_64" marker-end="url(#arrow)" stroke-width="2" stroke="#94a3b8" y2="220" x2="580" y1="180" x1="580"/>
+  <text id="svg_65" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="205" x="610">N层堆叠</text>
+  <rect id="svg_66" filter="url(#shadow)" stroke-width="2" stroke="#3b82f6" fill="#1a1a2e" rx="12" height="160" width="400" y="225" x="380"/>
+  <text id="svg_67" text-anchor="middle" fill="#93c5fd" font-weight="700" font-size="14" font-family="'Segoe UI', Arial, sans-serif" y="250" x="580">⚡ Transformer Decoder × N 层</text>
+  <rect id="svg_68" stroke="#2563eb" fill="#172554" rx="8" height="42" width="360" y="260" x="400"/>
+  <text id="svg_69" fill="#93c5fd" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="278" x="415">Layer 1</text>
+  <rect id="svg_70" opacity="0.8" fill="#1e40af" rx="5" height="30" width="90" y="266" x="465"/>
+  <text id="svg_71" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="285" x="510">Self-Attention</text>
+  <rect id="svg_72" opacity="0.8" fill="#1e40af" rx="5" height="30" width="55" y="266" x="565"/>
+  <text id="svg_73" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="285" x="592">Add&amp;Norm</text>
+  <rect id="svg_74" opacity="0.8" fill="#1e40af" rx="5" height="30" width="50" y="266" x="630"/>
+  <text id="svg_75" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="285" x="655">FFN</text>
+  <rect id="svg_76" opacity="0.8" fill="#1e40af" rx="5" height="30" width="55" y="266" x="690"/>
+  <text id="svg_77" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="285" x="717">Add&amp;Norm</text>
+  <text id="svg_78" text-anchor="middle" fill="#475569" font-size="16" font-family="'Segoe UI', Arial, sans-serif" y="315" x="580">⋮</text>
+  <rect id="svg_79" stroke="#2563eb" fill="#172554" rx="8" height="42" width="360" y="325" x="400"/>
+  <text id="svg_80" fill="#93c5fd" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="343" x="415">Layer N</text>
+  <rect id="svg_81" opacity="0.8" fill="#1e40af" rx="5" height="30" width="90" y="331" x="465"/>
+  <text id="svg_82" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="350" x="510">Self-Attention</text>
+  <rect id="svg_83" opacity="0.8" fill="#1e40af" rx="5" height="30" width="55" y="331" x="565"/>
+  <text id="svg_84" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="350" x="592">Add&amp;Norm</text>
+  <rect id="svg_85" opacity="0.8" fill="#1e40af" rx="5" height="30" width="50" y="331" x="630"/>
+  <text id="svg_86" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="350" x="655">FFN</text>
+  <rect id="svg_87" opacity="0.8" fill="#1e40af" rx="5" height="30" width="55" y="331" x="690"/>
+  <text id="svg_88" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="350" x="717">Add&amp;Norm</text>
+  <text id="svg_89" text-anchor="middle" fill="#64748b" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="380" x="580">每个 Token 在每一层"看到"所有其他 Token → 注意力加权聚合</text>
+  <line id="svg_90" marker-end="url(#arrow)" stroke-width="2" stroke="#94a3b8" y2="420" x2="580" y1="385" x1="580"/>
+  <rect id="svg_91" filter="url(#shadow)" stroke-width="2" stroke="#8b5cf6" fill="#2d1b4e" rx="12" height="60" width="400" y="425" x="380"/>
+  <text id="svg_92" text-anchor="middle" fill="#c4b5fd" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="450" x="580">🎯 Output Head (Linear + Softmax)</text>
+  <rect id="svg_93" fill="#3b0764" rx="3" height="16" width="120" y="460" x="410"/>
+  <rect id="svg_94" opacity="0.9" fill="#8b5cf6" rx="3" height="16" width="100" y="460" x="410"/>
+  <text id="svg_95" text-anchor="middle" fill="#fff" font-size="8" font-family="'Consolas', monospace" y="472" x="470">Token A: 0.72</text>
+  <rect id="svg_96" fill="#3b0764" rx="3" height="16" width="120" y="460" x="540"/>
+  <rect id="svg_97" opacity="0.5" fill="#8b5cf6" rx="3" height="16" width="20" y="460" x="540"/>
+  <text id="svg_98" text-anchor="middle" fill="#fff" font-size="8" font-family="'Consolas', monospace" y="472" x="600">Token B: 0.15</text>
+  <rect id="svg_99" fill="#3b0764" rx="3" height="16" width="90" y="460" x="670"/>
+  <rect id="svg_100" opacity="0.3" fill="#8b5cf6" rx="3" height="16" width="10" y="460" x="670"/>
+  <text id="svg_101" text-anchor="middle" fill="#fff" font-size="8" font-family="'Consolas', monospace" y="472" x="715">Token C: 0.08</text>
+  <line id="svg_102" marker-end="url(#arrow)" stroke-width="2" stroke="#94a3b8" y2="510" x2="580" y1="485" x1="580"/>
+  <text id="svg_103" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="502" x="610">采样</text>
+  <rect id="svg_104" filter="url(#shadow)" stroke-width="2" stroke="#10b981" fill="#1a2e1a" rx="12" height="55" width="500" y="515" x="330"/>
+  <text id="svg_105" text-anchor="middle" fill="#6ee7b7" font-weight="600" font-size="13" font-family="'Segoe UI', Arial, sans-serif" y="538" x="580">✅ 自回归生成：逐 Token 产出，直到 EOS</text>
+  <text id="svg_106" text-anchor="middle" fill="#a7f3d0" font-size="11" font-family="'Consolas', monospace" y="556" x="580">"这段代码的主要性能瓶颈在于嵌套循环导致的 O(n²) 复杂度..."</text>
+  <rect id="svg_107" stroke="#334155" fill="#0c1322" rx="10" height="170" width="220" y="220" x="30"/>
+  <text id="svg_108" text-anchor="middle" fill="#fbbf24" font-weight="600" font-size="11" font-family="'Segoe UI', Arial, sans-serif" y="245" x="140">💡 关键理解</text>
+  <text id="svg_109" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="268" x="42">• 模型不"理解"文字，只计算</text>
+  <text id="svg_110" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="283" x="52">概率：P(next|context)</text>
+  <text id="svg_111" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="303" x="42">• 注意力机制 = 全局关联，</text>
+  <text id="svg_112" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="318" x="52">非线性阅读</text>
+  <text id="svg_113" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="338" x="42">• 好的 Prompt = 精确索引，</text>
+  <text id="svg_114" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="353" x="52">激活正确的预训练模式</text>
+  <text id="svg_115" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="373" x="42">• 自回归：每次生成 1 个 Token，</text>
+  <text id="svg_116" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="388" x="52">以前面所有输出为条件</text>
+  <rect id="svg_117" stroke="#475569" fill="#0f172a" rx="6" height="35" width="120" y="425" x="40"/>
+  <text id="svg_118" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="447" x="100">推荐插入位置</text>
+  <text id="svg_119" text-anchor="middle" fill="#64748b" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="475" x="100">→ 第二章 2.1-2.3</text>
+  <path id="svg_121" d="m34.66666,420.66666c0,-0.54338 0.45662,-1 1,-1l136.00002,0c0.54338,0 1,0.45662 1,1l0,61c0,0.54338 -0.45662,1 -1,1l-136.00002,0c-0.54338,0 -1,-0.45662 -1,-1l0,-61z" opacity="undefined" stroke="null" fill="#000000"/>
+  <path id="svg_123" d="m30.66666,429.66665" opacity="NaN" fill="url(#bg1)"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" stroke-width="0" id="svg_125" y="460.66665" x="83.66666" stroke="null" fill="#A4FFFF">yali</text>
+ </g>
+</svg>

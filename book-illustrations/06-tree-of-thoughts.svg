@@ -1,0 +1,103 @@
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="bg">
+   <stop stop-color="#0f172a" offset="0%"/>
+   <stop stop-color="#1e293b" offset="100%"/>
+  </linearGradient>
+ </defs>
+ <!-- Problem node -->
+ <!-- Level 1 branches -->
+ <!-- L1-A -->
+ <!-- Score badge -->
+ <!-- L1-B -->
+ <!-- L1-C -->
+ <!-- Continue from A and B only -->
+ <!-- L2 from A -->
+ <!-- Continue from B -->
+ <!-- Continue best paths -->
+ <!-- L3: Refinement -->
+ <!-- Final convergence -->
+ <!-- Side panel: Comparison -->
+ <!-- Right panel: Flow -->
+ <!-- Crossed out path (pruned) -->
+ <!-- Insert position -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_4" rx="12" fill="url(#bg)" height="600" width="900"/>
+  <text id="svg_5" text-anchor="middle" fill="#e2e8f0" font-weight="700" font-size="20" font-family="'Segoe UI', Arial, sans-serif" y="35" x="450">Tree of Thoughts (ToT) — 思维树搜索</text>
+  <text id="svg_6" text-anchor="middle" fill="#64748b" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="55" x="450">每个推理步骤生成多个候选思路，模型评估后选择最优路径继续</text>
+  <rect id="svg_7" stroke-width="2" stroke="#60a5fa" fill="#1e293b" rx="10" height="45" width="160" y="75" x="370"/>
+  <text id="svg_8" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="102" x="450">❓ 问题</text>
+  <line id="svg_9" stroke-width="1.5" stroke="#64748b" y2="155" x2="180" y1="120" x1="400"/>
+  <line id="svg_10" stroke-width="1.5" stroke="#64748b" y2="155" x2="450" y1="120" x1="450"/>
+  <line id="svg_11" stroke-width="1.5" stroke="#64748b" y2="155" x2="720" y1="120" x1="500"/>
+  <rect id="svg_12" stroke-width="1.5" stroke="#2563eb" fill="#172554" rx="8" height="50" width="200" y="160" x="80"/>
+  <text id="svg_13" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="11" font-family="'Segoe UI', Arial, sans-serif" y="180" x="180">思路A: 代数法</text>
+  <text id="svg_14" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="198" x="180">设未知数列方程</text>
+  <rect id="svg_15" fill="#166534" rx="10" height="20" width="40" y="155" x="240"/>
+  <text id="svg_16" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="169" x="260">0.8</text>
+  <rect id="svg_17" stroke-width="1.5" stroke="#2563eb" fill="#172554" rx="8" height="50" width="200" y="160" x="350"/>
+  <text id="svg_18" text-anchor="middle" fill="#93c5fd" font-weight="600" font-size="11" font-family="'Segoe UI', Arial, sans-serif" y="180" x="450">思路B: 逆向推导</text>
+  <text id="svg_19" text-anchor="middle" fill="#64748b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="198" x="450">从答案反推条件</text>
+  <rect id="svg_20" fill="#166534" rx="10" height="20" width="40" y="155" x="510"/>
+  <text id="svg_21" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="169" x="530">0.9</text>
+  <rect id="svg_22" stroke-width="1.5" stroke="#991b1b" fill="#2d0a0a" rx="8" height="50" width="200" y="160" x="620"/>
+  <text id="svg_23" text-anchor="middle" fill="#fca5a5" font-weight="600" font-size="11" font-family="'Segoe UI', Arial, sans-serif" y="180" x="720">思路C: 图示法</text>
+  <text id="svg_24" text-anchor="middle" fill="#991b1b" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="198" x="720">画图辅助（评估低） ✗</text>
+  <rect id="svg_25" fill="#7f1d1d" rx="10" height="20" width="40" y="155" x="780"/>
+  <text id="svg_26" text-anchor="middle" fill="#f87171" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="169" x="800">0.3</text>
+  <line id="svg_27" stroke-width="1.5" stroke="#64748b" y2="250" x2="130" y1="210" x1="180"/>
+  <line id="svg_28" stroke-width="1.5" stroke="#64748b" y2="250" x2="230" y1="210" x1="180"/>
+  <rect id="svg_29" stroke="#2563eb" fill="#172554" rx="8" height="45" width="170" y="255" x="40"/>
+  <text id="svg_30" text-anchor="middle" fill="#93c5fd" font-size="9" font-family="'Consolas', monospace" y="275" x="125">A1: 设x=每头日产量</text>
+  <text id="svg_31" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Consolas', monospace" y="292" x="125">15x×7=总产量</text>
+  <rect id="svg_32" fill="#166534" rx="10" height="20" width="40" y="250" x="170"/>
+  <text id="svg_33" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="264" x="190">0.7</text>
+  <rect id="svg_34" stroke="#991b1b" fill="#2d0a0a" rx="8" height="45" width="170" y="255" x="230"/>
+  <text id="svg_35" text-anchor="middle" fill="#fca5a5" font-size="9" font-family="'Consolas', monospace" y="275" x="315">A2: 误用加法</text>
+  <text id="svg_36" text-anchor="middle" fill="#991b1b" font-size="9" font-family="'Consolas', monospace" y="292" x="315">15+20+7=42 ✗</text>
+  <rect id="svg_37" fill="#7f1d1d" rx="10" height="20" width="40" y="250" x="360"/>
+  <text id="svg_38" text-anchor="middle" fill="#f87171" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="264" x="380">0.1</text>
+  <line id="svg_39" stroke-width="1.5" stroke="#64748b" y2="250" x2="400" y1="210" x1="450"/>
+  <line id="svg_40" stroke-width="1.5" stroke="#64748b" y2="250" x2="500" y1="210" x1="450"/>
+  <rect id="svg_41" stroke="#2563eb" fill="#172554" rx="8" height="45" width="170" y="255" x="420"/>
+  <text id="svg_42" text-anchor="middle" fill="#93c5fd" font-size="9" font-family="'Consolas', monospace" y="275" x="505">B1: 先算单头周产</text>
+  <text id="svg_43" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Consolas', monospace" y="292" x="505">20×7=140 → ×15</text>
+  <rect id="svg_44" fill="#166534" rx="10" height="20" width="40" y="250" x="550"/>
+  <text id="svg_45" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="264" x="570">0.9</text>
+  <rect id="svg_46" stroke="#2563eb" fill="#172554" rx="8" height="45" width="170" y="255" x="610"/>
+  <text id="svg_47" text-anchor="middle" fill="#93c5fd" font-size="9" font-family="'Consolas', monospace" y="275" x="695">B2: 先算牛群日总</text>
+  <text id="svg_48" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Consolas', monospace" y="292" x="695">15×20=300 → ×7</text>
+  <rect id="svg_49" fill="#166534" rx="10" height="20" width="40" y="250" x="740"/>
+  <text id="svg_50" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="9" font-family="'Segoe UI', Arial, sans-serif" y="264" x="760">0.85</text>
+  <line id="svg_51" stroke-width="2" stroke="#10b981" y2="340" x2="400" y1="300" x1="505"/>
+  <line id="svg_52" stroke-width="1.5" stroke="#64748b" y2="340" x2="550" y1="300" x1="695"/>
+  <rect id="svg_53" stroke-width="2" stroke="#10b981" fill="#052e16" rx="8" height="50" width="180" y="345" x="310"/>
+  <text id="svg_54" text-anchor="middle" fill="#6ee7b7" font-size="10" font-family="'Consolas', monospace" y="365" x="400">B1 展开</text>
+  <text id="svg_55" text-anchor="middle" fill="#86efac" font-size="9" font-family="'Consolas', monospace" y="382" x="400">140×15 = 2100 ✓</text>
+  <rect id="svg_56" stroke-width="1.5" stroke="#2563eb" fill="#172554" rx="8" height="50" width="180" y="345" x="510"/>
+  <text id="svg_57" text-anchor="middle" fill="#93c5fd" font-size="10" font-family="'Consolas', monospace" y="365" x="600">B2 展开</text>
+  <text id="svg_58" text-anchor="middle" fill="#bfdbfe" font-size="9" font-family="'Consolas', monospace" y="382" x="600">300×7 = 2100 ✓</text>
+  <line id="svg_59" stroke-width="2" stroke="#10b981" y2="430" x2="450" y1="395" x1="400"/>
+  <line id="svg_60" stroke-width="2" stroke="#10b981" y2="430" x2="450" y1="395" x1="600"/>
+  <rect id="svg_61" stroke-width="2.5" stroke="#10b981" fill="#052e16" rx="10" height="50" width="200" y="435" x="350"/>
+  <text id="svg_62" text-anchor="middle" fill="#4ade80" font-weight="700" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="455" x="450">✅ 最终答案</text>
+  <text id="svg_63" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="'Segoe UI', Arial, sans-serif" y="475" x="450">2100 升（多路径验证）</text>
+  <rect id="svg_64" stroke="#475569" fill="#0c1322" rx="10" height="140" width="260" y="440" x="30"/>
+  <text id="svg_65" text-anchor="middle" fill="#e2e8f0" font-weight="600" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="463" x="160">📊 ToT vs CoT 对比</text>
+  <text id="svg_66" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="485" x="45">CoT: 单条链式推理</text>
+  <text id="svg_67" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="502" x="45">走错一步全盘皆输</text>
+  <text id="svg_68" fill="#6ee7b7" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="525" x="45">ToT: 多分支搜索 + 评估</text>
+  <text id="svg_69" fill="#6ee7b7" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="542" x="45">坏思路被剪枝 ✂️</text>
+  <text id="svg_70" fill="#fbbf24" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="565" x="45">代价：需要更多 API 调用</text>
+  <rect id="svg_71" stroke="#475569" fill="#0c1322" rx="10" height="140" width="220" y="440" x="650"/>
+  <text id="svg_72" text-anchor="middle" fill="#e2e8f0" font-weight="600" font-size="12" font-family="'Segoe UI', Arial, sans-serif" y="463" x="760">🔄 工作流程</text>
+  <text id="svg_73" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="485" x="665">1. 生成多个候选思路</text>
+  <text id="svg_74" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="505" x="665">2. 模型评估每个思路可行性</text>
+  <text id="svg_75" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="525" x="665">3. 选择高分思路继续扩展</text>
+  <text id="svg_76" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="545" x="665">4. 剪枝低分思路 ❌</text>
+  <text id="svg_77" fill="#94a3b8" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="565" x="665">5. 重复直到得出答案</text>
+  <line id="svg_78" opacity="0.4" stroke-dasharray="3,3" stroke-width="1.5" stroke="#ef4444" y2="210" x2="720" y1="160" x1="720"/>
+  <text id="svg_79" opacity="0.6" text-anchor="middle" fill="#ef4444" font-size="10" font-family="'Segoe UI', Arial, sans-serif" y="225" x="720">✂️ 已剪枝</text>
+ </g>
+</svg>
